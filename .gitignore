@@ -1,20 +1,15 @@
 #Exclude these directories and files.
-#Exclude all audio files so other audio files in the soundboard are not committed to the GitHub respository.
-audio/*.m4a
-audio/*.mp3
-audio/*.ogg
-audio/*.wav
-img/*.jpg
-img/*.png
+# admin_panel.html is a local-only snippet generator — do not deploy
+admin_panel.html
+# index.bak and css backup
+index.bak
+css/style.css.bak
 
-#Include these directories and files.
-#Only include example audio and image files for education and research.
-!audio/angry.*
-!audio/chewbacca.*
-!audio/luck.*
-!audio/raven.*
-!img/angry.png
-!img/chewbacca.png
-!img/luck.png
-!img/raven.png
-!img/style/*
+#Include all audio and image files (they are part of the soundboard).
+#The lines below are kept from the original template but are no longer needed.
+#audio/*.m4a
+#audio/*.mp3
+#audio/*.ogg
+#audio/*.wav
+#img/*.jpg
+#img/*.png
