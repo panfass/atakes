@@ -1,0 +1,20 @@
+#Exclude these directories and files.
+#Exclude all audio files so other audio files in the soundboard are not committed to the GitHub respository.
+audio/*.m4a
+audio/*.mp3
+audio/*.ogg
+audio/*.wav
+img/*.jpg
+img/*.png
+
+#Include these directories and files.
+#Only include example audio and image files for education and research.
+!audio/angry.*
+!audio/chewbacca.*
+!audio/luck.*
+!audio/raven.*
+!img/angry.png
+!img/chewbacca.png
+!img/luck.png
+!img/raven.png
+!img/style/*

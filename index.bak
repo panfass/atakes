@@ -1,0 +1,311 @@
+﻿<!doctype html>
+<!--[if lt IE 8]> <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<title>Ατάκες χεχεχεχε _MadebyTakisFass_</title>
+	<meta name="description" content="Ατάκες χεχεχεχε">
+	<meta name="author" content="sk33lz">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<style>
+	body {
+	  padding-top: 60px;
+	  padding-bottom: 40px;
+	}
+	</style>
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+<!-- 	<link rel="stylesheet/less" href="less/style.less"> -->
+<!-- 	<script src="js/libs/less-1.2.1.min.js"></script>  -->
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <a href="http://www.fassarispan.com"><img style="position: absolute; top: 0; right: 0; border: 0; z-index: 1031;" src="img/myribbon.png" alt="My Homepage"></a>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Ατάκες Χεχεχεχε</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <!-- <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+	
+	<div class="container">
+		<div class="player">
+			<section>
+			<audio class="tasos_anita" title="Είναι Κανεις απο Νησί;">
+				<source src="audio/tasos_anita/einaikaneisaponisi.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos_anita" title="Που Είχαμε Μείνει;">
+				<source src="audio/tasos_anita/poyeixamemeinei.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos_anita" title="Μου Τα Είχε Σκασει Περίεργα!">
+				<source src="audio/tasos_anita/skaseiperierga.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos_anita" title="Δεν Θα κάτσω να παίξω!">
+				<source src="audio/tasos_anita/tasos_denthakatswnapaiksw.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos_anita" title="Ευσυγκίνητος με τον Νικηφόρο!">
+				<source src="audio/tasos_anita/tasos_eysyigkinitosmenikiforo!.ogg" />
+			</audio>
+						</audio>
+				<audio class="tasos_anita" title="Γράφει εδώ μαλάκας;">
+				<source src="audio/tasos_anita/tasos_grafeieedwmalakas.ogg" />
+			</audio>
+						</audio>
+				<audio class="tasos_anita" title="Μου σκάει πιστόλι...">
+				<source src="audio/tasos_anita/tasos_mouskaeipistoli!.ogg" />
+			</audio>
+						</audio>
+				<audio class="tasos_anita" title="Πού είσαι 10άρι μουυ">
+				<source src="audio/tasos_anita/tasos_poueisai10arimou.ogg" />
+			</audio>
+			</audio>
+						</audio>
+			<audio class="tasos_anita" title="Χεχεχεχε">
+				<source src="audio/tasos_anita/tasos_xexexe!.ogg" />
+			</audio>
+			</audio>
+			</audio>
+				<audio class="tasos_anita" title="ΞΕΜΟΥ">
+				<source src="audio/tasos_anita/tasos_ξεμου.ogg" />
+			</audio>
+			</audio>
+			</audio>
+				<audio class="tasos_anita" title="10άρι">
+				<source src="audio/tasos_anita/tasos10-ari.ogg" />
+			</audio>
+			</audio>
+			</audio>
+				<audio class="tasos_anita" title="ΤΡΙΑ!">
+				<source src="audio/tasos_anita/treia!.ogg" />
+			</audio>
+			</audio>
+				<audio class="belesis" title="Ξημερώματαα">
+				<source src="audio/mpele/mpele_ksimeromata.ogg" />
+			</audio>
+			</audio>
+				<audio class="belesis" title="Πούτσα Πάλιι">
+				<source src="audio/mpele/mpele_poutsapali.ogg" />
+			</audio>
+			</audio>
+				<audio class="belesis" id="xexexe" title="Χεχεχεχε">
+				<source src="audio/mpele/mpele_xexexe.mp3" />
+			</audio>
+			</audio>
+				<audio class="takis" title="Γράφει μαλακες!">
+				<source src="audio/takis/takis_grafeimalakes.ogg" />
+			</audio>
+			</audio>
+				<audio class="takis" title="Τι μαλάκας είσαι...">
+				<source src="audio/takis/takis_timalakaseisai.ogg" />
+			</audio>
+			</audio>
+			<audio class="gerosathina" title="Σε Ξερή Ρεματία;">
+				<source src="audio/kseri_rematia.ogg" />
+			</audio>
+			</audio>
+				<audio class="LigoXalara" title="Λίγο Χαλαρά φίλεε...">
+				<source src="audio/ligo_xalara_file.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos" title="Αντικειμενικός...">
+				<source src="audio/tasos/tasos_antikeimenikos.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos" title="Δεν θα κάτσω να παίξω">
+				<source src="audio/tasos/tasos_dethakatswnapaiksw.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos" title="Μαλάκες τα χω δει όλα!">
+				<source src="audio/tasos/tasos_malakestaxwdeiola.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos" title="Safe #1">
+				<source src="audio/tasos/tasos_safe_xalaro.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos" title="Safe #2">
+				<source src="audio/tasos/tasos_safeee.ogg" />
+			</audio>
+			</audio>
+				<audio class="tasos" title="ΤΡΙΑΑ">
+				<source src="audio/tasos/tasos_TREIAAA.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Μωρή Καριόλα Φάσσαρη!">
+				<source src="audio/nikolopoulos/Nikolopoulos_kariola_fassari.ogg" />
+			</audio>
+			</audio>
+				<audio class="twopizzas" title="Δύο Πίτσες!">
+				<source src="audio/nikolopoulos/Nikolopoulos_diopitses.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Μια ελληνική μια γερμανική...">
+				<source src="audio/nikolopoulos/Nikolopoulos_elliniki_germaniki.ogg" />
+			</audio>
+			</audio>
+				<audio class="LuxembourgFlag" title="Ααχ Λουξεμβουργιανέ Φάσσαρη!">
+				<source src="audio/nikolopoulos/Nikolopoulos_louj.ogg" />
+			</audio>
+			<audio class="nikolopoulos" title="Τυρί Μπέικον...">
+				<source src="audio/nikolopoulos/Nikolopoulos_order.ogg" />
+			</audio>
+			
+				<audio class="10euro" title="10άρικο Φάσσαρη!">
+				<source src="audio/nikolopoulos/Nikolopoulos_10ariko.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Μωρή Πουτάνα Φάσσαρη">
+				<source src="audio/nikolopoulos/Nikolopoulos_moripoutanafassari.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Με ηχογραφείς;;">
+				<source src="audio/nikolopoulos/Nikolopoulos_meixografeis.ogg" />
+			</audio>
+			</audio>
+				<audio class="delivery" title="Αργεί ο Ντελιβεράς">
+				<source src="audio/nikolopoulos/Nikolopoulos_argeideliveras.ogg" />
+			</audio>
+			</audio>
+				<audio class="downloadarrow" title="Πώς αποθηκεύουμε τις φωτογραφίες;">
+				<source src="audio/nikolopoulos/Nikolopoulos_howtosave.ogg" />
+			</audio>
+			</audio>
+				<audio class="downloadarrow" title="Λήψη κάνεις;">
+				<source src="audio/nikolopoulos/Nikolopoulos_lipsikaneis.ogg" />
+			</audio>
+			</audio>
+				<audio class="delivery" title="Που είναι ο ντελιβεράς;">
+				<source src="audio/nikolopoulos/Nikolopoulos_poueinaiodeliveras.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Δεν θα δώσουμε λογαριασμό..">
+				<source src="audio/nikolopoulos/Nikolopoulo_dethasoudwsoumelogariasmo.ogg" />
+			</audio>
+			</audio>
+				<audio class="twopizzas" title="'Ηρθαν οι Πίτσες!">
+				<source src="audio/nikolopoulos/Nikolopoulos_hrthanoipitses.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Την 6η πως την θες;">
+				<source src="audio/nikolopoulos/Nikolopoulos_ektipitsa.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Πάμε για την 4η...">
+				<source src="audio/nikolopoulos/Nikolopoulos_pamegia4h.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Χαβάι να Πάρουμε τώρα;">
+				<source src="audio/nikolopoulos/Nikolopoulos_xavainaparoume.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Σάπια Πίτσα">
+				<source src="audio/nikolopoulos/Nikolopoulos_sapiapizza.ogg" />
+			</audio>
+			</audio>
+				<audio class="chicken-club-sandwich" title="Κλάμπ Τσίκεν">
+				<source src="audio/nikolopoulos/Nikolopoulos_clubchicken.ogg" />
+			</audio>
+			</audio>
+				<audio class="nikolopoulos" title="Όλα μπίπ">
+				<source src="audio/nikolopoulos/Nikolopoulos_olampip.ogg" />
+			</audio>
+			
+<script>
+
+function playAudio() { 
+	var x = document.getElementById("xexexe"); 
+    x.play(); 
+} 
+																																	
+</script>			
+			<ul id="doc" class="list floated soundboard clearfix">
+				<!-- Audio soundboard will go here -->
+			</ul>
+		</section>
+		</div> <!-- /player -->
+	</div> <!-- /container -->
+		
+	<div class="container">
+      <footer>
+	
+        <small> Ατάκες βγαλμένες απο 10άρια!!! 
+		 <a class="brand" href="https://github.com/sk33lz/bootstrap-html5-soundboard/">Original Project link</a> </small>
+
+
+			<div id="belesiss"  style="text-align:center"> 
+			<input id="btna" type="button" value="Είσαι Περίεργος;;;"/>
+			</div>
+<script>
+		$('#btna').click(function ()
+{
+  var imgDiv = document.createElement('div');
+  $(imgDiv ).addClass('content');
+  $(imgDiv).append('<img src="bele_xexexe.gif" /> ')
+  // add the imgDiv to your parent container element. 
+  // for e.g. 
+  $("#belesiss").append(imgDiv)
+  playAudio();
+});
+</script>
+		
+		
+		</footer>
+	</div> <!-- /container -->
+	
+
+ 
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.8.2.min.js"><\/script>')</script>
+
+<script src="js/libs/bootstrap/bootstrap-transition.js"></script>
+<script src="js/libs/bootstrap/bootstrap-collapse.js"></script>
+
+<script src="js/script.js"></script>
+<!--<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>-->
+
+<!--[if lt IE 7 ]>
+	<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+	<script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+<![endif]-->
+
+  </body>
+</html>
