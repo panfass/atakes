@@ -27,7 +27,7 @@ audio/              — Audio clips organised by person/group
   takis/
   nikolopoulos/
 css/                — Legacy Bootstrap CSS (not used in modern version)
-admin_panel.html    — Local-only snippet generator (gitignored, not deployed)
+admin_panel.html    — Snippet generator for adding new clips (live at /admin_panel.html)
 ```
 
 ## Adding a New Clip
@@ -48,7 +48,7 @@ admin_panel.html    — Local-only snippet generator (gitignored, not deployed)
 git add . && git commit -m "add: clip title" && git push
 ```
 
-> **Tip:** Open `admin_panel.html` locally in your browser for a form that generates the correct snippet for you.
+> **Tip:** Visit [atakes.fassarispan.com/admin_panel.html](https://atakes.fassarispan.com/admin_panel.html) for a form that generates the correct snippet for you.
 
 ## Adding a New Group (Person)
 
