@@ -1,12 +1,14 @@
 ﻿const GROUP_LABELS = {
   tasos_anita: 'Τάσος & Ανίτα',
   tasos: 'Τάσος',
-  Terios: 'Τέριος',
   belesis: 'Μπέλεσης',
+  nikolopoulos: 'Νικολόπουλος',
+  diafora: 'Διάφορα',
+  // individual labels still used for alt text / aria on each card
+  Terios: 'Τέριος',
   takis: 'Τάκης',
   gerosathina: 'Γέρος Αθήνας',
   LigoXalara: 'Λίγο Χαλαρά',
-  nikolopoulos: 'Νικολόπουλος',
   twopizzas: 'Δύο Πίτσες',
   LuxembourgFlag: 'Λουξεμβούργο',
   '10euro': '10άρικο',
@@ -14,6 +16,18 @@
   downloadarrow: 'Λήψη',
   'chicken-club-sandwich': 'Κλάμπ Τσίκεν',
 };
+
+// Groups with ≤2 clips are folded into the "Διάφορα" tab.
+// The card still shows the original per-person image.
+const DIAFORA_GROUPS = new Set([
+  'takis', 'gerosathina', 'LigoXalara', 'Terios',
+  'twopizzas', 'LuxembourgFlag', '10euro',
+  'delivery', 'downloadarrow', 'chicken-club-sandwich',
+]);
+
+function tabGroupOf(group) {
+  return DIAFORA_GROUPS.has(group) ? 'diafora' : group;
+}
 
 document.addEventListener('DOMContentLoaded', () => {
   const audioEls = Array.from(document.querySelectorAll('#audio-source audio'));
@@ -25,13 +39,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // Build clip data from audio elements
   const clips = audioEls.map(el => ({
     el,
-    group: el.className,
+    group: el.className,               // original class → used for image src
+    tabGroup: tabGroupOf(el.className), // used for tab filtering
     label: GROUP_LABELS[el.className] || el.className,
     title: el.title,
   }));
 
-  // Unique ordered groups
-  const groups = ['all', ...new Set(clips.map(c => c.group))];
+  // Unique ordered groups (using tabGroup so small groups collapse into Διάφορα)
+  const groups = ['all', ...new Set(clips.map(c => c.tabGroup))];
 
   // ── Tabs ──────────────────────────────────────────────────
   const tabsContainer = document.getElementById('tabs');
@@ -48,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const soundboard = document.getElementById('soundboard');
   clips.forEach(clip => {
     const li = document.createElement('li');
-    li.dataset.group = clip.group;
+    li.dataset.group = clip.tabGroup;  // filter by tab group, not raw class
     li.dataset.title = clip.title.toLowerCase();
 
     const btn = document.createElement('button');
