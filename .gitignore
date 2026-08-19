@@ -1,6 +1,4 @@
 #Exclude these directories and files.
-# admin_panel.html is a local-only snippet generator — do not deploy
-admin_panel.html
 # index.bak and css backup
 index.bak
 css/style.css.bak
