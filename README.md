@@ -54,7 +54,20 @@ git add . && git commit -m "add: clip title" && git push
 
 1. Add a button image at `imgs/<groupname>.png` (138×120 px recommended).
 2. Add the group label to `GROUP_LABELS` in `js/script.js`.
-3. Add clips using the format above with the new group class.
+3. If the group will have ≤2 clips, also add the key to `DIAFORA_GROUPS` so it folds into the **Διάφορα** tab automatically. Remove it from `DIAFORA_GROUPS` later if you add more clips.
+4. Add clips using the format above with the new group class.
+
+## Tab categories
+
+| Tab | Groups included |
+|---|---|
+| Τάσος & Ανίτα | `tasos_anita` |
+| Τάσος | `tasos` |
+| Μπέλεσης | `belesis` |
+| Νικολόπουλος | `nikolopoulos` |
+| Διάφορα | `takis`, `gerosathina`, `LigoXalara`, `Terios`, `twopizzas`, `LuxembourgFlag`, `10euro`, `delivery`, `downloadarrow`, `chicken-club-sandwich` |
+
+Groups with ≤2 clips are folded into **Διάφορα** via `DIAFORA_GROUPS` in `js/script.js`. Each card still shows its own image.
 
 ## Deployment
 
@@ -74,9 +87,6 @@ Every `git push` to `main` triggers a new deployment automatically.
 
 Based on the [Bootstrap HTML5 Soundboard](https://github.com/sk33lz/bootstrap-html5-soundboard) template by sk33lz.  
 Modernized and customized by [TakisFass](https://fassarispan.com).
-
-
-3. Upload your new PNG image file to the the img directory, 'img'. (Formats: .png)
 
 4. Looking at the source code's `index.html` you would copy the following lines, Lines 84-88, and paste them on the following line, Line 89.
 
