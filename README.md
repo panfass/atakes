@@ -1,52 +1,80 @@
-# Bootstrap HTML5 Soundboard
+# Ατάκες χεχεχεχε
 
-## About
+A personal HTML5 soundboard featuring audio clips from friends, built for fun and deployed on GitHub Pages.
 
-Flash Soundboards are a dying breed, so I wanted to make a soundboard boilerplate that will take soundboards into the next century using HTML5.
+🔊 **Live site:** [atakes.fassarispan.com](https://atakes.fassarispan.com)
 
-Bootstrap HTML5 Soundboard runs strictly on HTML5, jQuery, and CSS. No Flash is required!
+---
 
 ## Features
 
-- Plays HTML5 compatible audio files like M4A, MP3, OGG, and WAV.
-- Works in all modern browsers that support the HTML5 <audio> tag.
-- Responsive, mobile-friendly design works on mobile devices.
-- No need for Flash!
+- Click any card to play the clip — only one plays at a time
+- Filter by person using the tab bar
+- Search clips by title in real time
+- Responsive grid — works on mobile and desktop
+- No Flash, no jQuery, no build step — pure HTML5, vanilla JS, and Tailwind CSS CDN
 
-## Installation
+## Project Structure
 
-1. Download the latest release from the [Releases page](https://github.com/sk33lz/bootstrap-html5-soundboard/releases).
+```
+index.html          — Main soundboard page
+js/script.js        — Vanilla JS: reads audio elements, builds tabs/cards, handles playback & search
+imgs/               — Button images (one .png per group)
+audio/              — Audio clips organised by person/group
+  tasos_anita/
+  tasos/
+  mpele/
+  takis/
+  nikolopoulos/
+css/                — Legacy Bootstrap CSS (not used in modern version)
+admin_panel.html    — Local-only snippet generator (gitignored, not deployed)
+```
 
-2. Unpack the archive to your web server or local machine.
+## Adding a New Clip
 
-3. Add images in .png format that are 138px Wide and 120px High to the `img` folder for the best results.
+1. Drop the `.ogg` (or `.mp3`) file into the correct `audio/<folder>/` subfolder.
+2. Open `index.html` and paste a new `<audio>` block inside `<div hidden id="audio-source">`:
 
-4. Add audio files in HTML5 `<audio>` tag compatible formats like .mp3, .m4a, .ogg, or .wav format to the `audio` folder.
+```html
+<audio class="groupname" title="Clip title here">
+    <source src="audio/groupname/filename.ogg" />
+</audio>
+```
 
-5. Ensure that the audio file and image files are the same name.
+3. The `class` must match the button image filename in `imgs/` (e.g. `class="tasos"` → `imgs/tasos.png`).
+4. Commit and push:
 
-        Example:
-	    chewbacca.mp3
-	    chewbacca.png
+```bash
+git add . && git commit -m "add: clip title" && git push
+```
 
-4. Edit the `index.html` and modify the source code with your file names.
+> **Tip:** Open `admin_panel.html` locally in your browser for a form that generates the correct snippet for you.
 
-5. Edit the CSS class on the `<audio>` tag to have the same name as your file. This will ensure the JS sets up the proper unordered list rendering the image with the `<audio>` tag.
+## Adding a New Group (Person)
 
-        Example:
-	    <audio class="chewbacca" title="Chewbacca Clip">
-		
-## Using the Soundboard
+1. Add a button image at `imgs/<groupname>.png` (138×120 px recommended).
+2. Add the group label to `GROUP_LABELS` in `js/script.js`.
+3. Add clips using the format above with the new group class.
 
-1. Open up the `index.html` file to view the soundboard.
+## Deployment
 
-2. Click an image to play it's `<audio>` sound clip.
+Hosted on **GitHub Pages** from the `main` branch with a custom domain (`atakes.fassarispan.com`).  
+Every `git push` to `main` triggers a new deployment automatically.
 
-## Adding Additional Sound Clips and Images
+## Tech Stack
 
-1. Copy the last full `<audio>` tag lines and paste them below those lines to add another entry.
+| | |
+|---|---|
+| Styling | [Tailwind CSS](https://tailwindcss.com) (CDN, no build step) |
+| JS | Vanilla ES2020 |
+| Audio | HTML5 `<audio>` + `.ogg` / `.mp3` |
+| Hosting | GitHub Pages |
 
-2. Upload your new HTML5 compatible audio clip to the audio directory, 'audio'. (Formats: .m4a, .mp3, .ogg, .wav)
+## Credits
+
+Based on the [Bootstrap HTML5 Soundboard](https://github.com/sk33lz/bootstrap-html5-soundboard) template by sk33lz.  
+Modernized and customized by [TakisFass](https://fassarispan.com).
+
 
 3. Upload your new PNG image file to the the img directory, 'img'. (Formats: .png)
 
