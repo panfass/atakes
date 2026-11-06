@@ -29,6 +29,15 @@ function tabGroupOf(group) {
   return DIAFORA_GROUPS.has(group) ? 'diafora' : group;
 }
 
+// Share the MP3 source; OGG remains a playback fallback.
+function addAudioShareControls(container, audioEl) {
+  const source = audioEl.dataset.shareSrc || audioEl.querySelector('source[type="audio/mpeg"]')?.getAttribute('src');
+  if (!source) return;
+  addFileShareControls(container, {
+    source, title: audioEl.title, mimeType: 'audio/mpeg', extension: 'mp3', kind: 'audio',
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const audioEls = Array.from(document.querySelectorAll('#audio-source audio'));
   let currentAudio = null;
@@ -86,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     btn.addEventListener('click', () => playClip(clip.el, btn));
     li.appendChild(btn);
+    addAudioShareControls(li, clip.el);
     soundboard.appendChild(li);
   });
 

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GIFs — Ατάκες Χεχεχεχε</title>
+  <meta name="description" content="Η συλλογή μας από GIFs. Βρες, δες και μοιράσου τα αγαπημένα σου.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    dialog::backdrop { background: rgb(15 23 42 / 0.75); }
+    dialog:not([open]) { display: none; }
+    button:focus-visible, a:focus-visible { outline: 3px solid #60a5fa; outline-offset: 3px; }
+    body:has(dialog[open]) { overflow: hidden; }
+  </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800">
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col sm:flex-row items-center gap-3">
+      <h1 class="text-xl font-bold flex-1 flex items-center gap-2">
+        <span class="text-2xl" aria-hidden="true">🔊</span> Ατάκες Χεχεχεχε
+      </h1>
+      <label class="w-full sm:w-72">
+        <span class="sr-only">Αναζήτηση GIF</span>
+        <input id="gif-search" type="search" placeholder="Ψάξε GIF..." class="w-full px-4 py-2 rounded-full border border-slate-200 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400 bg-slate-50">
+      </label>
+    </div>
+    <nav aria-label="Βιβλιοθήκες" class="max-w-7xl mx-auto px-4 pb-3 flex gap-2">
+      <a href="index.html" class="px-4 py-2 rounded-lg text-slate-600 hover:bg-slate-100 text-sm font-semibold">Ήχοι</a>
+      <a href="gifs.html" aria-current="page" class="px-4 py-2 rounded-lg bg-slate-800 text-white text-sm font-semibold">GIFs</a>
+    </nav>
+    <div id="gif-categories" aria-label="Κατηγορίες GIF" class="max-w-7xl mx-auto px-4 pb-3 flex gap-2 overflow-x-auto"></div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-6">
+    <div class="mb-5">
+      <h2 class="text-xl font-bold">Τα GIFs μας</h2>
+      <p class="text-sm text-slate-500 mt-1">Μικρές στιγμές, μεγάλες αντιδράσεις. Πάτησε για προεπισκόπηση ή μοιράσου ένα GIF.</p>
+      <button id="gif-autoplay" type="button" aria-pressed="true" class="mt-3 min-h-11 px-3 py-2 rounded-lg bg-white border border-slate-200 text-slate-600 text-sm font-medium hover:bg-slate-100">Παύση GIFs</button>
+    </div>
+    <p id="gif-load-status" role="status" class="text-sm text-slate-500">Φόρτωση συλλογής…</p>
+    <button id="gif-retry" type="button" hidden class="my-3 px-4 py-2 rounded-lg bg-blue-50 text-blue-700">Δοκίμασε ξανά</button>
+    <ul id="gif-gallery" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 items-start"></ul>
+    <p id="gif-no-results" hidden role="status" class="text-center text-slate-500 py-12">Δεν βρέθηκαν GIFs. Δοκίμασε άλλη αναζήτηση ή κατηγορία.</p>
+    <noscript><p>Ενεργοποίησε τη JavaScript για να δεις τη συλλογή GIF.</p></noscript>
+  </main>
+
+  <dialog id="gif-preview" aria-labelledby="gif-preview-title" class="m-auto p-4 sm:p-6 rounded-2xl shadow-xl bg-white w-[calc(100%_-_2rem)] max-w-xl max-h-[90dvh] overflow-y-auto">
+    <div class="flex items-center justify-between gap-4 mb-3">
+      <h2 id="gif-preview-title" class="font-bold text-lg"></h2>
+      <button id="gif-preview-close" type="button" autofocus aria-label="Κλείσιμο προεπισκόπησης" class="min-h-11 min-w-11 rounded-lg bg-slate-100 text-slate-700 text-xl">×</button>
+    </div>
+    <img id="gif-preview-image" alt="" class="max-h-[60dvh] max-w-full w-auto mx-auto rounded-lg object-contain">
+    <p id="gif-preview-error" hidden role="status" class="my-3 text-sm text-slate-600">Δεν φορτώθηκε η προεπισκόπηση. Κλείσε και δοκίμασε ξανά.</p>
+    <button id="gif-preview-motion" type="button" aria-pressed="false" class="mt-4 min-h-11 px-4 py-2 rounded-lg bg-blue-50 text-blue-700 text-sm font-medium">Αναπαραγωγή</button>
+  </dialog>
+
+  <footer class="max-w-7xl mx-auto px-4 py-8 text-center border-t border-slate-200 mt-4 text-sm text-slate-400">Ατάκες βγαλμένες απο 10άρια!</footer>
+  <script src="js/share.js"></script>
+  <script src="js/gifs.js"></script>
+</body>
+</html>
